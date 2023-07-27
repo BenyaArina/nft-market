@@ -3,8 +3,8 @@
 body {
   margin: 0;
   font-family: 'Work Sans', sans-serif;
-  background-color: #2b2b2b;
   color: #fff;
+  background-color: #2b2b2b;
 }
 
 h1,
@@ -17,11 +17,11 @@ p {
 }
 
 ul {
- list-style-type: none; 
+  list-style-type: none;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 header {
@@ -32,10 +32,10 @@ header {
 }
 
 .logo-box {
- display: flex;
- justify-content: center;
- align-items: center;
- gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .logo {
@@ -50,10 +50,10 @@ header {
 }
 
 .btn-sign-up {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
   height: 60px;
   padding: 0px 30px;
   border: none;
@@ -66,10 +66,15 @@ header {
   background-color: #a259ff;
 }
 
+.btn-sign-up:hover {
+  background-color: #ffb13b;
+  transition-property: background-color;
+  transition-duration: 2s;
+}
+
 .navigation {
   display: flex;
   gap: 10px;
-  color: #fff;
   text-align: center;
   font-size: 16px;
   font-weight: 600;
@@ -86,155 +91,219 @@ header {
 }
 
 .hero-section {
-display: flex;
- justify-content: center;
- padding: 80px 0 80px;
+  display: flex;
+  justify-content: center;
+  padding: 80px 0 80px;
 }
 
-.btn-started {
-    display: flex;
-    height: 60px;
-    margin: 30px 0 30px;
-    padding: 0px 50px;
-    border: none;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    border-radius: 20px;
-    background: #A259FF;
-    color: #fff;
-    cursor: pointer;   
+.hero-section-content {
+  display: flex;
+  gap: 30px;
+  width: 1050px;
 }
-
-
 
 .hero-section-about {
- width: 510px;
+  width: 510px;
 }
 
 .hero-section-about h1 {
-    margin-bottom: 20px;
-    font-size: 67px;
-    font-weight: 600;
-    line-height: 110%;
-    text-transform: capitalize;
-  }
-  
-  .hero-section-about p {
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 160%; /* 35.2px */
-    text-transform: capitalize;
-  }
-  
-  .list-additional-info {
-    display: flex;
-    gap: 30px;
-    padding: 0;
-  }
+  margin-bottom: 20px;
+  font-size: 67px;
+  font-weight: 600;
+  line-height: 110%;
+  text-transform: capitalize;
+}
 
-  .list-additional-info li {
- display: flex;
-flex-direction: column;
-  }
+.hero-section-about h1:hover {
+  text-shadow: 10px 10px 20px #a259ff;
+  transition-property: text-shadow;
+  transition-duration: 2s;
+}
 
-  .title-total-sale {
-font-size: 28px;
-font-weight: 700;
-line-height: 140%; /* 39.2px */
-text-transform: capitalize;
-  }
+.hero-section-about p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 160%; /* 35.2px */
+  text-transform: capitalize;
+}
 
-  .hero-section-placeholder {
- width: 510px;
-  }
+.btn-started {
+  display: flex;
+  height: 60px;
+  margin: 30px 0 30px;
+  padding: 0px 50px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 20px;
+  color: #fff;
+  background-color: #a259ff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+  cursor: pointer;
+}
 
-  .name-title-total-sale {
-    font-size: 23.99px;
-    font-weight: 400;
-    line-height: 160%; /* 38.384px */
-    text-transform: capitalize;
-  }
+.btn-started:hover {
+  background-color: #ffb13b;
+  transition-property: background-color;
+  transition-duration: 2s;
+}
 
-  .hero-section-placeholder img {
-    border-radius: 20px 20px 0px 0px;
-  }
+.list-additional-info {
+  display: flex;
+  gap: 30px;
+  padding: 0;
+}
 
-  .placeholder-description {
-padding: 20px;
-border-radius: 0px 0px 20px 20px;
-background-color: #3B3B3B;
-  }
+.list-additional-info li {
+  display: flex;
+  flex-direction: column;
+}
 
-  .placeholder-description h3 {
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 140%; /* 30.8px */
-    text-transform: capitalize;
-  }
+.title-total-sale {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 140%; /* 39.2px */
+  text-transform: capitalize;
+}
 
-  .nft-card-section {
- display: flex;
- justify-content: center;
- background-color: #3B3B3B;
-  }
+.name-total-sale {
+  font-size: 23.99px;
+  font-weight: 400;
+  line-height: 160%; /* 38.384px */
+  text-transform: capitalize;
+}
 
-  .nft-card-content {
+.hero-section-placeholder {
+  width: 510px;
+}
+
+.hero-section-placeholder img {
+  border-radius: 20px 20px 0px 0px;
+}
+
+.placeholder-description {
+  padding: 20px;
+  border-radius: 0px 0px 20px 20px;
+  background-color: #3b3b3b;
+}
+
+.placeholder-description h3 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 140%; /* 30.8px */
+  text-transform: capitalize;
+}
+
+.nft-cards-section {
+  display: flex;
+  justify-content: center;
+  background-color: #3b3b3b;
+}
+
+.nft-cards-content {
   display: flex;
   flex-wrap: wrap;
   width: 1050px;
   gap: 30px;
   padding: 60px;
-  }
+}
 
-  .artist-card {
-display: flex;
-align-items: center;
-gap: 12px;
-margin-top: 10px;
-  }
+.artist-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
 
-  .nft-card {
- width: 330px;
-  }
+.artist-avatar:hover {
+  transform: scale(1.4);
+}
 
-  .nft-info {
- display: flex;
- flex-direction: column;
- gap: 25px;
+.nft-card {
+  width: 330px;
+}
+
+.nft-card:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.nft-info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
   padding: 20px 30px 25px 30px;
   border-radius: 0 0 20px 20px;
   background-color: #2b2b2b;
-  }
+}
 
-  .additional-info {
+.additional-info {
   display: flex;
- justify-content: space-between;
-  }
+  justify-content: space-between;
+}
 
-  .img-placeholder-card {
-    display: flex;
+.img-placeholder-card {
+  display: flex;
+}
+
+.price,
+.highest-bid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.price-title,
+.highest-bid-title {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 110%; /* 13.2px */
+  color: #858584;
+}
+
+.price-value,
+.highest-bid-value {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+  color: #fff;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
   }
-  
-  .price,
-  .highest-bid {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
   }
-  
-  .price-title,
-  .highest-bid-title {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 110%; /* 13.2px */
-    color: #858584;
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
   }
-  
-  .price-value,
-  .highest-bid-value {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 140%; /* 22.4px */
-    color: #fff;
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
   }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
